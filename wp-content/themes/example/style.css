@@ -1,0 +1,63 @@
+/*
+Theme Name: example.com
+Theme URI: example.com
+Description: theme for example.com
+Version: 0.1
+Author: Jack
+*/
+
+html{
+	height: 100%;
+	background-color: #98e7ff;
+}
+
+body{
+	height: 100%;
+	background: url("media/img/background.jpg") no-repeat;
+	background-size: cover;
+}
+
+.main_header {
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	padding: 15px 0;
+}
+
+.search-form{
+	background-color: rgba(255,255,255,0.8);
+	margin-top: 40px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.results-block {
+    background-color: rgba(255,255,255,0.8);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+	background-color: #00A8EF;
+	border-color: #00A8EF;
+}
+
+.form-inline .form-control{
+	width: 100%;
+}
+
+/*UI-widget*/
+.ui-widget {width: 100px; padding: 10px 0; border-radius: 3px!important; font-family: 'LatoRegular', sans-serif!important; background: #ffffff ; border: 1px solid grey; z-index: 10}
+.ui-widget li { list-style: none;}
+.ui-widget li div{ color: black; padding: 10px; font-size: 14px;}
+.ui-widget li div:hover, .ui-widget li:hover div, .ui-widget li .active, .ui-widget .ui-state-active{ background: none; border: none;color: black}
+.ui-widget li div:hover, .ui-widget .ui-state-active{ background-color: #a4e4ff; cursor: pointer;}
+.ui-helper-hidden-accessible {display: none}
+.ui-autocomplete-category {
+	font-weight: bold;
+	color: #a1a1a1;
+	text-transform: uppercase;
+	padding: 0 10px;
+	margin: .2em 0 .2em;
+	line-height: 1.5;
+	font-size: 0.9em;
+}
