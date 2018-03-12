@@ -156,8 +156,8 @@ if ( ! empty( $_GET ) ) {
                             <td><?php echo $city_data['country_name'] ?></td>
                             <td><?php echo ucfirst($city_data['city_name']) ?></td>
                             <td><?php echo $city_data['capital'] ?></td>
-                            <td><?php echo $city_data['country_pop'] ?></td>
-                            <td><?php echo $city_data['city_pop'] ?></td>
+                            <td><?php echo number_format($city_data['country_pop']) ?></td>
+                            <td><?php echo number_format($city_data['city_pop']) ?></td>
                         </tr>
 					<?php endforeach; ?>
                     </tbody>
