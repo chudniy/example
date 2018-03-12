@@ -138,7 +138,7 @@ if ( ! empty( $_GET ) ) {
             </div>
         </div>
 
-        <div class="results-block">
+        <div class="results-block table-responsive">
 			<?php if ( $results ): ?>
                 <table id="results-table" class="display table" cellspacing="0" width="100%">
                     <thead>
