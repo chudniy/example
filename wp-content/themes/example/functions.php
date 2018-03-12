@@ -112,20 +112,20 @@ function getResults( $country = false, $country_pop = false, $city = false, $cit
 
 	if ( $city_pop ) {
 		switch ( $city_pop ) {
-			case '500K':
+			case '50K':
 				$city_pop_from = 1;
+				$city_pop_to   = 49999;
+				break;
+			case '50K-500K':
+				$city_pop_from = 50000;
 				$city_pop_to   = 499999;
 				break;
-			case '500K-5M':
+			case '500K-1M':
 				$city_pop_from = 500000;
-				$city_pop_to   = 4999999;
+				$city_pop_to   = 999999;
 				break;
-			case '5M-45M':
-				$city_pop_from = 5000000;
-				$city_pop_to   = 44999999;
-				break;
-			case 'over-45M':
-				$city_pop_from = 45000000;
+			case 'over-1M':
+				$city_pop_from = 1000000;
 				$city_pop_to   = 999999999;
 				break;
 			default:

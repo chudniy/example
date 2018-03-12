@@ -118,17 +118,16 @@ if ( ! empty( $_GET ) ) {
                         <br>
                         <select id="city_population" class="form-control" name="city_population">
                             <option value="" <?php echo ! $city_population ? 'selected' : null ?>></option>
-                            <option value="500K" <?php echo $city_population == '500K' ? 'selected' : null ?>>< 500
+                            <option value="50K" <?php echo $city_population == '50K' ? 'selected' : null ?>>< 50
                                 тыс
                             </option>
-                            <option value="500K-5M" <?php echo $city_population == '500K-5M' ? 'selected' : null ?>>500
-                                тыс. - 5М
+                            <option value="50K-500K" <?php echo $city_population == '50K-500K' ? 'selected' : null ?>>50K - 500K
                             </option>
-                            <option value="5M-45M" <?php echo $city_population == '5M-45M' ? 'selected' : null ?>>5М -
-                                45М
+                            <option value="500K-1M" <?php echo $city_population == '500K-1M' ? 'selected' : null ?>>500K -
+                                1М
                             </option>
-                            <option value="over-45M" <?php echo $city_population == 'over-45M' ? 'selected' : null ?>>>
-                                45М
+                            <option value="over-1M" <?php echo $city_population == 'over-1M' ? 'selected' : null ?>>>
+                                1М
                             </option>
                         </select>
                     </div>
